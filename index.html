@@ -1,0 +1,1103 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Rutuu ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:#06040f;color:#fff;overflow-x:hidden}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:35px;text-align:center}
+h1{font-size:clamp(3rem,8vw,5.5rem)}
+.script{font-family:"Great Vibes",cursive;font-size:3.2rem}
+.hero{background:linear-gradient(-45deg,#0d0d1f,#4d1368,#ff5ea9,#ffd36c,#6db8ff);background-size:500% 500%;animation:bg 16s infinite}
+@keyframes bg{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.glass{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);padding:28px;border-radius:22px;max-width:850px;border:1px solid rgba(255,255,255,.15)}
+.btn{padding:16px 34px;border:none;border-radius:40px;background:#ff4fa0;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 0 25px #ff4fa088}
+.names span{display:inline-block;margin:6px;padding:10px 18px;border-radius:30px;background:#ffffff15}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;width:100%;max-width:950px}
+.frame{height:260px;border:2px dashed #ffffff55;border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.hidden{display:none}
+footer{padding:40px;text-align:center;background:#000}
+.float{position:fixed;top:-30px;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+
+.love-text{
+    font-family:'Great Vibes', cursive;
+    font-size:58px;
+    font-weight:400;
+    color:#ffffff;
+    text-align:center;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+
+    animation:glow 2.5s ease-in-out infinite alternate;
+
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ffb6d9,
+        0 0 40px #ff69b4,
+        0 0 70px #ff1493;
+}
+
+.love-text::after{
+    content:attr(data-text);
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+
+    color:#ff4fa0;
+    filter:blur(18px);
+    opacity:.8;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 20px #ffb6d9,
+            0 0 35px #ff69b4;
+    }
+
+    to{
+        text-shadow:
+            0 0 8px #fff,
+            0 0 15px #fff,
+            0 0 30px #ffb6d9,
+            0 0 50px #ff4fa0,
+            0 0 80px #ff1493;
+    }
+}	
+
+/*  PHOTO FRAME */
+
+.frame{
+
+width:320px;
+height:430px;
+
+border-radius:22px;
+
+overflow:hidden;
+
+border:2px solid rgba(255,255,255,.25);
+
+box-shadow:0 0 30px rgba(255,105,180,.35);
+
+position:relative;
+/* Allow Shine */
+isolation:isolate;	
+
+transition:transform .35s ease, box-shadow .35s ease;
+
+cursor:pointer;
+
+transform-style:preserve-3d;
+
+will-change:transform;
+
+}
+.frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .35s ease;
+    cursor:pointer;
+}
+
+.frame:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* M POP UP*/
+
+.popup{
+    position:fixed;
+    inset:0;
+    background:
+radial-gradient(circle at center,
+rgba(255,105,180,.18),
+rgba(0,0,0,.94) 60%);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.5s;
+
+    z-index:99999;
+
+    backdrop-filter:blur(12px);
+}
+
+.popup.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/* POPUP IMAGE */
+
+.popup img{
+
+    width:min(90vw,550px);
+
+    max-height:88vh;
+
+    border-radius:28px;
+
+    border:3px solid rgba(255,255,255,.25);
+
+    box-shadow:
+
+        0 0 35px #ff69b4,
+
+        0 0 80px #ff1493,
+
+        0 0 130px rgba(255,20,147,.5);
+
+    transform:scale(.55) rotate(-5deg);
+
+    opacity:0;
+
+    transition:
+
+        transform .55s cubic-bezier(.22,1,.36,1),
+
+        opacity .4s;
+animation:popupGlow 2s infinite alternate;
+}
+
+.popup.active img{
+
+    opacity:1;
+
+    transform:
+	
+        scale(1)
+
+        rotate(0deg);
+
+}
+
+.closePopup{
+
+    position:absolute;
+
+    top:25px;
+
+    right:30px;
+
+    font-size:40px;
+
+    color:white;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+
+
+.photo-section{display:flex!important;flex-direction:row!important;justify-content:space-between;align-items:center;gap:50px;flex-wrap:wrap;}
+.photo-left,.photo-right,.text-left,.text-right{flex:1;display:flex;justify-content:center;align-items:center;}
+.frame{transition:transform .35s ease,box-shadow .35s ease;position:relative;}	
+.frame:hover{
+
+    /*  Tilt */
+    transform:rotate(-2deg);
+
+    /* Glow */
+    box-shadow:
+
+        0 0 20px #ff69b4,
+
+        0 0 45px #ff1493,
+
+        0 0 80px rgba(255,20,147,.45);
+
+}
+.sparkle{position:absolute;pointer-events:none;animation:spark .8s linear forwards;}
+@keyframes spark{from{opacity:1;transform:translate(0,0) scale(1);}to{opacity:0;transform:translate(var(--x),var(--y)) scale(0);}}
+@media(max-width:900px){.photo-section{flex-direction:column!important;}}
+
+/*  HEART PARTICLES */
+
+.heart{
+
+    position:absolute;
+
+    pointer-events:none;
+
+    font-size:22px;
+
+    animation:heartFly 1.4s linear forwards;
+
+    z-index:50;
+
+}
+
+@keyframes heartFly{
+
+0%{
+
+opacity:1;
+
+transform:translate(0,0) scale(.5);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translate(var(--x),-120px) scale(1.5);
+
+}
+
+}
+
+/* PHOTO RIGHT */
+
+.photo-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.text-left{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+/* GLASS SHINE EFFECT*/
+
+.frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-30%;
+
+    left:-120%;
+
+    width:60%;
+
+    height:170%;
+
+    background:linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.65),
+
+        transparent
+
+    );
+
+    transform:rotate(20deg);
+
+    transition:1s;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+.frame:hover::before{
+
+    left:170%;
+
+}
+
+/* SCROLL REVEAL*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:
+
+        opacity .9s ease,
+
+        transform .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*   FIREWORKS */
+
+.firework{
+
+    position:fixed;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+
+.particle{
+
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    animation:explode 1.2s ease-out forwards;
+
+}
+
+@keyframes explode{
+
+    from{
+
+        opacity:1;
+
+        transform:translate(0,0) scale(1);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:translate(var(--x),var(--y)) scale(.2);
+
+    }
+
+}
+
+/* POPUP GLOW	 */
+
+@keyframes popupGlow{
+
+from{
+
+box-shadow:
+
+0 0 30px #ff69b4,
+
+0 0 70px #ff1493;
+
+}
+
+to{
+
+box-shadow:
+
+0 0 50px #ffffff,
+
+0 0 90px #ff69b4,
+
+0 0 140px #ff1493;
+
+}
+
+}
+
+/*CURSOR HEART */
+
+.cursor-heart{
+
+    position:fixed;
+
+    pointer-events:none;
+
+    font-size:18px;
+
+    z-index:999999;
+
+    animation:cursorHeart .9s linear forwards;
+
+}
+
+@keyframes cursorHeart{
+
+0%{
+
+opacity:1;
+
+transform:translate(-50%,-50%) scale(.5);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:translate(-50%,-120px) scale(1.5);
+
+}
+
+}
+
+/* MUSIC BUTTON */
+
+#musicBtn{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+font-size:28px;
+
+cursor:pointer;
+
+background:#ff4fa0;
+
+color:white;
+
+z-index:999999;
+
+box-shadow:
+
+0 0 20px #ff4fa0,
+
+0 0 40px #ff1493;
+
+transition:.3s;
+
+}
+
+#musicBtn:hover{
+
+transform:scale(1.15);
+
+}
+
+
+#loader{position:fixed;inset:0;z-index:999999;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(135deg,#090014,#240032,#000);transition:opacity .8s}
+#loader.hide{opacity:0;pointer-events:none}
+.loader-heart{font-size:70px;animation:pulse 1.4s infinite}
+.loader-text{margin-top:18px;font-family:'Great Vibes',cursive;font-size:48px;color:#fff;text-shadow:0 0 20px #ff4fa0}
+.loader-sub{margin-top:10px;opacity:.85;font-size:18px}
+.star{position:fixed;width:2px;height:2px;background:#fff;border-radius:50%;animation:twinkle 2.5s infinite alternate;pointer-events:none;z-index:1}
+@keyframes pulse{50%{transform:scale(1.15)}}
+@keyframes twinkle{from{opacity:.2}to{opacity:1;box-shadow:0 0 12px #fff}}
+
+
+</style>
+</head>
+<body>
+
+<div id="loader"><div class="loader-heart">❤️</div><div class="loader-text">A Little Surprise...</div><div class="loader-sub">For Rutuu 💖</div></div>
+
+
+<section class="hero">
+<div class="script"> Special Day For My Special ❤️</div>
+<h1>Happiest Birthday Rutuu ❤️	🎂💫🤞🥳</h1>
+<h3>15th July</h3><br>
+<div class="names">
+<span>Rutuu</span><span>Beta</span><span>Baccha</span><span>Betuu</span><span>Babudi</span>
+</div><br>
+<p>Just tap below... ❤️</p><br>
+<button class="btn" onclick="showLetter()">🎁 Some Little lines </button>
+</section>
+
+<section>
+<div class="glass hidden" id="letter">
+<h2>💌 Dear Rutuu...</h2><br>
+<p>Maybe I am just a friend in your life…</p>
+<p>But from my side, you've become someone incredibly special.</p><br>
+<p>I genuinely hope life always keeps you smiling.</p>
+<p>May every dream you see become real.</p>
+<p>May every birthday be even happier than the last.</p><br>
+<h2>Happy Birthday, Beta ❤️</h2>
+</div>
+</section>
+
+<section class="photo-section" style="background:linear-gradient(135deg,#1b0934,#320d5b)">
+
+    <div class="photo-left">
+
+        <div class="frame">
+            <img src="photo/baccha.jpeg"
+                 onclick="openPopup(this)">
+        </div>
+
+    </div>
+
+    <div class="text-right">
+
+        <div class="glass">
+
+            <h2>📸 Hey,cutieeee! ♥ </h2>
+            <br>
+
+            <p>Some people become special without even trying.</p>
+            <p>Somewhere between ordinary conversations...</p>
+            <p>You quietly became one of the most beautiful parts of my life.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- 	 PHOTO 2 -->
+
+<section class="photo-section" style="background:linear-gradient(135deg,#25061e,#56083b)">
+
+    <!-- LEFT SIDE TEXT -->
+
+    <div class="text-left">
+
+        <div class="glass">
+
+            <h2>💖 Another Little Moment</h2>
+
+            <br>
+
+            <p>Your smile has become one of my favourite things.</p>
+
+            <p>I don't know when that happened...</p>
+
+            <p>But I'm grateful that it did.</p>
+
+            <p>Keep smiling... always.</p>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE PHOTO -->
+
+    <div class="photo-right">
+
+        <div class="frame">
+
+            <img src="photo/baccha2.jpeg"
+
+            onclick="openPopup(this)">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section style="background:linear-gradient(135deg,#1b0008,#42002d)">
+<div class="glass">
+<h2>✨ Birthday Wishes</h2><br>
+<p>🌸 Stay happy.</p>
+<p>💖 Mahadev bless You Baccha.</p>
+<p>✨ Keep smiling Dear💫.</p>
+<p>🤗💕 Always be happy & stay with me forever mine.</p>
+<p>🌈 May every new day bring you happiness.</p>
+<p>🎂 And may this birthday be unforgettable.</p>
+</div>
+</section>
+<!-- PHOTO 3 (CENTER)-->
+
+<section style="background:linear-gradient(135deg,#150028,#2b0848,#4b1368)">
+
+    <div class="frame">
+
+        <img src="photo/baccha3.jpeg"
+             onclick="openPopup(this)">
+
+    </div>
+
+    <br><br>
+
+    <div class="glass">
+
+        <h2>🌸 A Memory I'll Always Keep</h2>
+
+        <br>
+
+        <p>Some moments don't need to be perfect...</p>
+
+        <p>They become beautiful simply because you were in them.</p>
+
+	<p>Sometimes a single picture...</p>
+
+<p>holds a thousand unspoken feelings.</p>
+
+<p>This is one of those pictures.</p>
+
+        <p>Thank you for being one of the brightest parts of my life.</p>
+
+    </div>
+
+</section>
+
+<section style="background:linear-gradient(135deg,#180021,#3a0b50,#170018);">
+
+    <div class="glass">
+
+        <h2 class="love-text"
+            data-text="❤️">
+            ❤️
+        </h2>
+
+        <br><br>
+
+        <h2 style="font-family:'Great Vibes',cursive;
+                   font-size:48px;
+                   line-height:1.5;">
+
+            Some people become memories...
+
+            <br><br>
+
+            You became a Life.
+
+        </h2>
+
+        <br>
+
+        <p style="font-size:18px;opacity:.85;">
+
+            Every smile of yours became
+            a memory I'll always treasure.
+
+        </p>
+
+    </div>
+
+</section>		
+<!--   PHOTO 4 -->
+
+<section class="photo-section"
+style="background:linear-gradient(135deg,#3a0b50,#220033,#12001f);">
+
+    <!-- LEFT PHOTO -->
+
+    <div class="photo-left">
+
+        <div class="frame">
+
+            <img src="photo/baccha5.jpeg"
+                 onclick="openPopup(this)">
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT TEXT -->
+
+    <div class="text-right">
+
+        <div class="glass">
+
+            <h2>💞 keep smilling Beautiful 💞 </h2>
+
+            <br>
+
+            <p>Some pictures are beautiful...</p>
+
+            <p>Some become unforgettable.</p>
+
+            <p>This one became both for me. ❤️</p>
+
+        </div>
+
+    </div>
+
+</section>
+<section style="background:linear-gradient(135deg,#000,#2d2100,#5a3d00)">
+<div class="glass">
+<div class="script">One Last Message</div><br>
+<p>I have never asked God for everything...</p>
+
+<p>But whenever I stand before Him...</p>
+
+<p>I always ask Him to protect your smile...</p>
+
+<p>And never let life take you far from mine.</p>	
+<p>No matter where life takes us...</p>
+<p>I genuinely hope life always gives you reasons to smile.</p><br>
+<h1>Happy Birthday My Babudi ❤️</h1>
+<p>— From Someone Who Truly Cares & Loves you💫	🌙</p>
+</div>
+</section>
+
+<script>
+function showLetter(){
+ document.getElementById("letter").classList.remove("hidden");
+ document.getElementById("letter").scrollIntoView({behavior:"smooth"});
+}
+setInterval(()=>{
+ const e=document.createElement("div");
+ e.className="float";
+ e.innerHTML=arr[Math.floor(Math.random()*arr.length)];
+ e.style.left=Math.random()*100+"vw";
+ e.style.fontSize=(18+Math.random()*24)+"px";
+ e.style.animationDuration=(5+Math.random()*6)+"s";
+ document.body.appendChild(e);
+ setTimeout(()=>e.remove(),12000);
+},160);
+
+/* PREMIUM POPUP + HEART BURST */
+
+function openPopup(img){
+
+    document.getElementById("popup").classList.add("active");
+    document.getElementById("popupImg").src = img.src;
+
+    const emojis=["❤️","💖","💕","💝","✨"];
+
+    for(let i=0;i<30;i++){
+
+        const heart=document.createElement("div");
+
+        heart.className="cursor-heart";
+
+        heart.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+
+        heart.style.left=(window.innerWidth/2)+"px";
+        heart.style.top=(window.innerHeight/2)+"px";
+
+        /* Random Direction */
+
+        const x=(Math.random()*500)-250;
+
+        const y=(Math.random()*500)-250;
+
+        heart.animate([
+
+            {
+
+                transform:"translate(-50%,-50%) scale(.5)",
+
+                opacity:1
+
+            },
+
+            {
+
+                transform:`translate(${x}px,${y}px) scale(1.4)`,
+
+                opacity:0
+
+            }
+
+        ],{
+
+            duration:900,
+
+            easing:"ease-out"
+
+        });
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+
+            heart.remove();
+
+        },900);
+
+    }
+
+}
+
+function closePopup(){
+
+    document.getElementById("popup").classList.remove("active");
+
+}
+
+/* HEART EFFECT */
+
+document.querySelectorAll(".frame").forEach(frame=>{
+
+    frame.addEventListener("mouseenter",()=>{
+
+        for(let i=0;i<8;i++){
+
+            const heart=document.createElement("div");
+
+            heart.className="heart";
+
+            const arr=["💖","💕","💗","💝","✨"];
+
+            heart.innerHTML=arr[Math.floor(Math.random()*arr.length)];
+
+            heart.style.left=(Math.random()*250)+"px";
+
+            heart.style.top=(Math.random()*320)+"px";
+
+            heart.style.setProperty("--x",(Math.random()*160-80)+"px");
+
+            frame.appendChild(heart);
+
+            setTimeout(()=>{
+                heart.remove();
+            },1400);
+
+        }
+
+    });
+
+});
+/* ALL SIDE PHOTO TILT EFFECT */
+
+document.querySelectorAll(".frame").forEach(frame=>{
+
+    frame.addEventListener("mousemove",(e)=>{
+
+        const rect=frame.getBoundingClientRect();
+
+        const x=e.clientX-rect.left;
+
+        const y=e.clientY-rect.top;
+
+        const centerX=rect.width/2;
+
+        const centerY=rect.height/2;
+
+        const rotateY=(x-centerX)/18;
+
+        const rotateX=(centerY-y)/18;
+
+        frame.style.transform=
+        `perspective(900px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        scale(1.05)`;
+
+    });
+
+    frame.addEventListener("mouseleave",()=>{
+
+        frame.style.transform=
+        "perspective(900px) rotateX(0deg) rotateY(0deg) scale(1)";
+
+    });
+
+});
+/* FIREWORKS EFFECT */
+
+function createFirework(x,y){
+
+    const colors=[
+        "#ff4fa0",
+        "#ffd700",
+        "#00e5ff",
+        "#ffffff",
+        "#ff6ec7"
+    ];
+
+    const fw=document.createElement("div");
+
+    fw.className="firework";
+
+    fw.style.left=x+"px";
+    fw.style.top=y+"px";
+
+    document.body.appendChild(fw);
+
+    for(let i=0;i<35;i++){
+
+        const p=document.createElement("div");
+
+        p.className="particle";
+
+        const angle=(Math.PI*2/35)*i;
+
+        const distance=80+Math.random()*70;
+
+        p.style.background=colors[Math.floor(Math.random()*colors.length)];
+
+        p.style.setProperty("--x",
+            Math.cos(angle)*distance+"px");
+
+        p.style.setProperty("--y",
+            Math.sin(angle)*distance+"px");
+
+        fw.appendChild(p);
+
+    }
+
+    setTimeout(()=>fw.remove(),1200);
+
+}
+
+/* Every 2 Seconds */
+
+setInterval(()=>{
+
+    createFirework(
+
+        Math.random()*window.innerWidth,
+
+        Math.random()*window.innerHeight*0.7
+
+    );
+
+},2000);
+
+/* CURSOR HEART */
+
+document.addEventListener("mousemove",(e)=>{
+
+    if(Math.random()>.72){
+
+        const heart=document.createElement("div");
+
+        heart.className="cursor-heart";
+
+        const arr=["❤️","💖","💕","✨"];
+
+        heart.innerHTML=arr[Math.floor(Math.random()*arr.length)];
+
+        heart.style.left=e.clientX+"px";
+
+        heart.style.top=e.clientY+"px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>heart.remove(),900);
+
+    }
+
+});
+
+/*  MUSIC */
+
+let playing=false;
+
+function toggleMusic(){
+
+const music=document.getElementById("bgMusic");
+
+const btn=document.getElementById("musicBtn");
+
+if(!playing){
+
+music.play();
+
+btn.innerHTML="⏸️";
+
+playing=true;
+
+}else{
+
+music.pause();
+
+btn.innerHTML="🎵";
+
+playing=false;
+
+}
+
+}
+
+
+window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('loader').classList.add('hide');},2200);});
+for(let i=0;i<70;i++){const s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=(Math.random()*2.5)+'s';document.body.appendChild(s);}
+
+</script>
+
+
+<section style="background:linear-gradient(135deg,#14051f,#2d0f45);padding:60px 20px;text-align:center;color:white">
+<div class="glass">
+<h2 class="love-text" data-text="For Someone Very Special ❤️">
+    For Someone Very Special ❤️
+</h2>
+<p>Sometimes people enter our lives without making any promises...</p>
+<p>Yet they quietly become a reason to smile.</p>
+<p>You never asked me to care.</p>
+<p>You never asked me to remember the little things.</p>
+<p>Still... I do.</p>
+<p>I never planned for someone to become this important.</p>
+<p>But somewhere between ordinary days and simple conversations...</p>
+<p>You quietly became one of the most beautiful parts of my life.</p>
+<p>Every time you smile, it feels like the day became lighter.</p>
+<p>Every time you're sad, I wish I could take away the pain and leave only reasons for you to smile.</p>
+<p>I don't always have the perfect words.</p>
+<p>But my wishes for you have always been real.</p>
+<p>I hope life protects your smile.</p>
+<p>I hope your dreams find you.</p>
+<p>I hope happiness chooses you again and again.</p>
+<p>Maybe some feelings don't need a name.</p>
+<p>Maybe they are meant to be shown through care, respect, time and prayers.</p>
+<p>If one day you ever wonder whether someone truly wanted the best for you...</p>
+<p>I hope this little Gesture answers that question.</p>
+<p>I may not always say it... but God already knows how often I whisper your name in my prayers. I've never asked Him to give me everything... I only ask Him to keep you happy, safe, and in my life—for every tomorrow.</p>
+<p> Even if the whole world never knows what you mean to me... God already does. </p>
+<p> Because every time I stand before Him, somehow... your name finds its way into my prayers before my own. </p>
+<p>Happy Birthday, Rutuu. ❤️
+Keep smiling... because somewhere in this world, there's someone whose day becomes brighter every time you do. ✨</p>
+<p class="love-text">Keep shining, My Babudi. 🌸❤️</p>
+</div>
+<div class="photo">- You are Everything for me bachha 💕 </div>
+<div class="photo">  With all my prayers & Love.-
+Mayur 💕 </div>
+</section>
+<div class="popup" id="popup">
+
+    <span class="closePopup" onclick="closePopup()">✕</span>
+    <img id="popupImg">
+
+</div>
+
+<!--MUSIC BUTTON-->
+
+<button id="musicBtn" onclick="toggleMusic()">
+
+    🎵
+
+</button>
+
+<audio id="bgMusic" loop>
+
+    <source src="music/song.mp3" type="audio/mpeg">
+
+</audio>
+</body>
+</html>
