@@ -1040,6 +1040,11 @@ playing=false;
 
 window.addEventListener('load',()=>{setTimeout(()=>{document.getElementById('loader').classList.add('hide');},2200);});
 for(let i=0;i<70;i++){const s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=(Math.random()*2.5)+'s';document.body.appendChild(s);}
+document.addEventListener("click", function startMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+    document.removeEventListener("click", startMusic);
+});
 
 </script>
 
